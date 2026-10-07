@@ -2,6 +2,10 @@
 
 Excel's built-in bond functions price a fixed coupon bond from a single yield. They do not cover floating rate, amortising or callable bonds, and they cannot discount on a yield curve. This engine prices seven bond types in Python: it discounts each bond's cash flows on a flat yield or on a zero curve bootstrapped from live Federal Reserve or ECB quotes, and it values callable and putable bonds on a Ho-Lee binomial tree. On the bonds tested, the engine matches Excel's prices, accrued interest, yields and Macaulay durations to 10 decimal places, and the known differences are listed in the methodology note.
 
+**[Open the live app](https://bond-pricing-engine.streamlit.app/)**
+
+![Yield curve tab](docs/screenshot.png)
+
 ## What it does
 
 - Prices seven bond types on a flat yield or on a zero curve plus a spread.
