@@ -1,0 +1,11 @@
+type,maturity_years,rate_percent
+Zero rate,0.25,4.30
+Zero rate,0.5,4.25
+Zero rate,1,4.10
+Par yield,2,3.95
+Par yield,3,3.90
+Par yield,5,3.95
+Par yield,7,4.10
+Par yield,10,4.25
+Par yield,20,4.65
+Par yield,30,4.70
