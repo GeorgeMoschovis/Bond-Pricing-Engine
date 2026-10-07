@@ -83,6 +83,9 @@ def test_durations_match_excel_duration_functions():
     short_report = value_bond(short_bond, make_market(flat_curve(0.09, 2)))
     assert abs(short_report["effective_duration"] - 5.73566981391884) < 0.0001
 
+    modified_duration = short_report["macaulay_duration"] / (1 + 0.09 / 2)
+    assert abs(modified_duration - 5.73566981391884) < 0.0000000001
+
 
 def test_annual_compounding_reproduces_the_original_script():
     face_value = 1000.0

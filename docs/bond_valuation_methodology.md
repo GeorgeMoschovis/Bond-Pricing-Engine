@@ -286,7 +286,8 @@ The automated tests compare the engine with values calculated by Microsoft Excel
 | Accrued interest | `ACCRINT` | Equal to 10 decimal places |
 | Yield from price | `YIELD` | Equal to 10 decimal places |
 | Macaulay duration | `DURATION` | Equal to 10 decimal places |
-| Modified duration | `MDURATION` | Within 0.0001 for the 8-year bond tested. The engine reprices rather than differentiates, and the gap grows with maturity |
+| Macaulay duration divided by (1 + y/k) | `MDURATION` | Equal to 10 decimal places |
+| Effective duration | `MDURATION` | Within 0.0001 for the 8-year bond tested. The engine reprices rather than differentiates, and the gap grows with maturity |
 
 Identities tested: the bootstrapped curve reprices every par instrument at 100, a perpetual on a flat yield is worth coupon over yield, a floater is worth par on a flat yield when its margins match and on a curve when both margins are zero, a level payment bond pays the same amount every period, the tree with no options equals the discounted cash flow price, and the solved spread recovers the spread used to price.
 
